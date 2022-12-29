@@ -1,0 +1,19 @@
+{
+  "cards": [
+    {
+      "id": "1",
+      "title": "Clean the house",
+      "detail": "Kitchen, Bathroom and Living Room"
+    },
+    {
+      "id": "2",
+      "title": "Buy groceries",
+      "detail": "Milk, eggs, butter, sausages, onions, potatoes, bacon, bread"
+    },
+    {
+      "id": "3",
+      "title": "Read a book about TypeScript",
+      "detail": "Read this book, and build an app with TypeScript"
+    }
+  ]
+}
