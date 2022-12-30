@@ -2,16 +2,20 @@ import React from "react";
 import Navbar from "./Navbar";
 import CardForm from "./CardForm";
 import Card from "./Card";
-import cardList from "../data/todoList.json";
+import CompletedCards from "./CompletedCards";
+import { useSelector } from "react-redux";
 
 export const Home = () => {
+  const cards = useSelector((state) => state.cards)
+
   return (
     <div>
       <Navbar />
       <CardForm />
-      {cardList.cards.map((card) => (
-        <Card key={card.id} title={card.title} detail={card.detail} />
+      {cards.map((card) => (
+        <Card key={card.id} id={card.id} title={card.title} detail={card.detail} completed={card.completed} />
       ))}
+      <CompletedCards />
     </div>
   );
 };
